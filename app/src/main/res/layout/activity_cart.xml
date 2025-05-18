@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/cart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp">
+
+            <ImageView
+                android:id="@+id/cartimage1"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="220dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="TODO"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/coffe5" />
+
+            <TextView
+                android:id="@+id/cartPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/rs_1200_00"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/cartimage1"
+                app:layout_constraintTop_toBottomOf="@+id/cart_food_name1" />
+
+            <TextView
+                android:id="@+id/cart_food_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="212dp"
+                android:text="@string/expresso"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/cartPrice1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/cartimage1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgdelete1"
+                android:layout_width="30dp"
+                android:layout_height="21dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="52dp"
+                android:contentDescription="TODO"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/delete" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView10"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/Nude"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/imgdelete1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.911"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.112">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/_1"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp">
+
+
+            <ImageView
+                android:id="@+id/cartimage2"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="220dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="TODO"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/cc5" />
+
+            <TextView
+                android:id="@+id/cartPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/rs_1750_00"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/cartimage2"
+                app:layout_constraintTop_toBottomOf="@+id/cart_food_name2" />
+
+            <TextView
+                android:id="@+id/cart_food_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="212dp"
+                android:text="@string/frappe"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/cartPrice2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/cartimage2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgdelete2"
+                android:layout_width="30dp"
+                android:layout_height="21dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginBottom="28dp"
+                android:contentDescription="TODO"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/delete" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView11"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/Nude"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/imgdelete2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.943"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.549">
+
+                <TextView
+                    android:id="@+id/textquantit"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/_1"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp">
+
+
+            <ImageView
+                android:id="@+id/cartimage3"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="220dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="TODO"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/snack" />
+
+            <TextView
+                android:id="@+id/cartPrice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/rs_1760_00"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/cartimage3"
+                app:layout_constraintTop_toBottomOf="@+id/cart_food_name3" />
+
+            <TextView
+                android:id="@+id/cart_food_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="212dp"
+                android:text="@string/turkish_coffee"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/cartPrice3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/cartimage3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imgdelete3"
+                android:layout_width="30dp"
+                android:layout_height="21dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginBottom="40dp"
+                android:contentDescription="TODO"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/delete" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView12"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/Nude"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/imgdelete3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.943"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.434">
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/_1"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="400dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="80dp"
+            android:text="@string/total_amount_rs_1500"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnChckout"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="@color/Brunette"
+            android:text="@string/checkout"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/Nude"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/naveHome"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/cartIcon1"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/shopping_cart" />
+
+            <ImageView
+                android:id="@+id/Menuicon1"
+                android:layout_width="50dp"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/list" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

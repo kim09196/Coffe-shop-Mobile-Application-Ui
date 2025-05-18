@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Lion">#D7CAA9</color>
+    <color name="Dark_Olive_Drab">#322709</color>
+    <color name="Brunette">#40230A</color>
+    <color name="Nude">#E3BC9A</color>
+    <color name="Dark_Mustard_Brown">#4D4422</color>
+    <color name="Pastel_Brown">#88705C</color>
+
+</resources>

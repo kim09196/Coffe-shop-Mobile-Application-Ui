@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".category"
+    android:background="@drawable/main"
+    >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="TODO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mask_group" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="64dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/serch_icon" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="800dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085"
+        app:srcCompat="@drawable/rectangleserch" />
+
+    <TextView
+        android:id="@+id/textHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="180dp"
+        android:text="@string/hello_charuni"
+        android:textColor="#C8C0C0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="123dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="72dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coffee_1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/aoboshi_one"
+        android:text="@string/best_beans"
+        android:textColor="#EDE3E3"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHello" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/the_quality_of_our_coffee_n_beans_is_always_maintained_n_so_that_our_coffee_nlover_still_get_the_best_ncoffee_taste"
+        android:textColor="#E9E7E7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/biorhyme_extralight"
+        android:text="@string/category"
+        android:textColor="#F2EFEF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="450dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <TextView
+            android:id="@+id/iceCoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/arbutus"
+            android:text="@string/ice_coffee"
+            android:textColor="#E6E6E6" />
+
+        <TextView
+            android:id="@+id/Shake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/arbutus"
+            android:text="@string/shake"
+            android:textColor="#F6F1F1" />
+
+        <TextView
+            android:id="@+id/hotCoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/arbutus"
+            android:text="@string/hot_coffee"
+            android:textColor="#E2DCDC" />
+
+        <TextView
+            android:id="@+id/Snack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/arbutus"
+            android:text="@string/snacks"
+            android:textColor="#E2DCDC" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="-50dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!-- Horizontal ScrollView -->
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="200dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Coffee Item 1 -->
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/menu_background"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <!-- Price -->
+                    <TextView
+                        android:id="@+id/txtmilkcoffee"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/aladin"
+                        android:text="@string/ice_milk_coffee_rs_1500_00"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Image -->
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/cofee2" />
+                </LinearLayout>
+
+                <!-- Coffee Item 2 -->
+
+                <!-- Coffee Item 3 -->
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/menu_background"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/aladin"
+                        android:text="@string/mocha_rs_1200_00"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/cofee4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/menu_background"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/aladin"
+                        android:text="@string/late_rs_800_00"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/coffe3" />
+                </LinearLayout>
+
+                <!-- Coffee Item 4 -->
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/menu_background"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/aladin"
+                        android:text="@string/irish_coffee_rs_800_00"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/coffe5" />
+                </LinearLayout>
+
+                <!-- Coffee Item 5 -->
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/menu_background"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/aladin"
+                        android:text="@string/affogato_rs_1700_00"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img6"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/coffe6" />
+                </LinearLayout>
+
+                <!-- Coffee Item 6 -->
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/menu_background"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/aladin"
+                        android:text="@string/vietnamese_coffee_rs_1400_00"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img7"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/coffee_1" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/biorhyme_extralight"
+            android:text="@string/special_for_you"
+            android:textColor="#F2EFEF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.141"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+            app:layout_constraintVertical_bias="0.34" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="444dp"
+            android:layout_height="270dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/special1" />
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@drawable/special2" />
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="6dp"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@drawable/special3" />
+
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="6dp"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@drawable/special4" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/Nude"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/naveHome"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/cartIcon1"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/shopping_cart" />
+
+            <ImageView
+                android:id="@+id/Menuicon1"
+                android:layout_width="50dp"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/list" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

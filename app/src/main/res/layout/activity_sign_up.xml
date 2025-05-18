@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_up"
+    android:background="@color/Nude">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="397dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/coffee_1" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="917dp"
+        android:layout_height="850dp"
+        android:layout_marginTop="164dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rectangle20" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="272dp"
+        android:text="Create\nAccount"
+        android:textColor="#281F1F"
+        android:textColorHighlight="#020000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="437dp"
+        android:layout_height="547dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditTextName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Enter Your Name"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+            android:id="@+id/textEmailR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/TextEmailR"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:autofillHints="Enter Your Email"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Enter your Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+            android:id="@+id/txtPasswrdR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtPasswordR"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/RenterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/re_enter_password"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/txtRenterPswword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_margin="12dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="@string/re_enter_your_password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="360dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Brunette"
+
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

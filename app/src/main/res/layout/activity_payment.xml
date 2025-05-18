@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment"
+    android:background="@drawable/main">
+
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/address"
+        android:textColor="#F4EEEE"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54"
+        app:srcCompat="@drawable/line3" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/payment"
+        android:textColor="#FAF6F6"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="168dp"
+        android:backgroundTint="@color/Lion"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints="name"
+            android:ems="10"
+            android:hint="@string/cardholder_name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints="."
+            android:ems="10"
+            android:hint="@string/card_number"
+            android:inputType="text"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="200dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextText8"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:autofillHints="."
+                android:ems="10"
+                android:hint="@string/mm_yy"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextText9"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:autofillHints="."
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:hint="@string/cvc"
+                android:inputType="text"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="@color/Lion"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+        app:layout_constraintVertical_bias="0.843">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/textView38"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints="."
+                android:inputType="text"
+                android:text="@string/subtotal_rs_1200_00"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/textView39"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:autofillHints="."
+                android:inputType="text"
+                android:text="@string/shiping_fee_rs_300_00"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/textView40"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:inputType="text"
+                android:text="@string/promocode_enter_promo_code_here"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/textView41"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:inputType="text"
+                android:text="@string/grand_total_rs_1500_00"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="300dp"
+            android:text="@string/rs_1500_00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnPayNow"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="280dp"
+            android:backgroundTint="@color/Brunette"
+            android:text="@string/pay_now"
+            android:textSize="18sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
